@@ -1,6 +1,4 @@
 <?php
-
-
 require_once '../app/models/Boek.php';
 
 class HomeController {
