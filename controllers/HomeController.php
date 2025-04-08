@@ -1,7 +1,12 @@
 <?php
+require_once 'models/BookModel.php';
+
 class HomeController {
     public function index() {
-        require_once 'views/home.php';
+        $bookModel = new BookModel();
+        $books = $bookModel->getAllBooks();
+        
+        require 'views/home.php';
     }
 }
 ?>
