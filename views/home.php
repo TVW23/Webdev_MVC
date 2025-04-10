@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <title>Bibliotheek</title>
-</head>
-<body>
-    <h1>Welkom bij de bibliotheek!</h1>
+<?php require 'views/partials/header.php'; ?>
 
-    <h2>Beschikbare boeken</h2>
-    <ul>
-        <?php foreach ($books as $book): ?>
-            <li><strong><?= $book['title'] ?></strong> – <?= $book['author'] ?></li>
-        <?php endforeach; ?>
-    </ul>
-</body>
-</html>
+<h2>Beschikbare boeken</h2>
+<ul>
+    <?php foreach ($books as $book): ?>
+        <li><strong><?= $book['title'] ?></strong> – <?= $book['author'] ?></li>
+    <?php endforeach; ?>
+</ul>
+
+<?php require 'views/partials/footer.php'; ?>
+
+

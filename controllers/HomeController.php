@@ -1,12 +1,14 @@
 <?php
+require_once 'core/Controller.php';
 require_once 'models/BookModel.php';
 
-class HomeController {
+class HomeController extends Controller {
     public function index() {
         $bookModel = new BookModel();
         $books = $bookModel->getAllBooks();
-        
-        require 'views/home.php';
+
+        $this->view('home', ['books' => $books]);
     }
 }
+
 ?>
