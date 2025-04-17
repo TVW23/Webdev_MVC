@@ -1,5 +1,5 @@
 <?php
-require_once 'core/connect.php';
+require_once 'core/Database.php';
 
 class BookModel extends Database {
     public function getAllBooks() {

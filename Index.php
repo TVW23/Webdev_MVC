@@ -1,6 +1,7 @@
 <?php
+session_start();
 require_once 'controllers/HomeController.php';
 
-$controller = new Homecontroller();
+$controller = new HomeController();
 $controller->index();
 ?>
